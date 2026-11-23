@@ -1,0 +1,380 @@
+/* =========================
+   RESET CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #d9d9d9;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
+    min-height: 63px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 3px solid #555;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+
+    padding: 5px 15px;
+}
+
+.header h1 {
+    font-size: clamp(20px, 3vw, 43px);
+    font-weight: 800;
+
+    letter-spacing: 6px;
+    text-align: center;
+
+    color: black;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main {
+    width: 100%;
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 25px 15px;
+}
+
+
+/* =========================
+   REGISTER CONTAINER
+========================= */
+
+.register-container {
+    width: 100%;
+    max-width: 778px;
+
+    background-color: #fffafa;
+
+    border: 1.5px solid #222;
+    border-radius: 21px;
+
+    padding: 12px 52px 60px;
+}
+
+
+/* JUDUL REGISTER */
+
+.register-title {
+    font-size: 46px;
+    font-weight: 700;
+
+    text-align: center;
+
+    color: black;
+
+    margin-bottom: 4px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.register-form {
+    width: 100%;
+}
+
+
+/* GROUP INPUT */
+
+.form-group {
+    width: 100%;
+    margin-bottom: 23px;
+}
+
+
+/* LABEL */
+
+.form-group label {
+    display: block;
+
+    font-size: 36px;
+    font-weight: 400;
+
+    color: black;
+
+    margin-bottom: 8px;
+}
+
+
+/* INPUT */
+
+.form-group input {
+    width: 100%;
+    height: 49px;
+
+    background-color: #d9d9d9;
+
+    border: 1.5px solid #222;
+    border-radius: 5px;
+
+    padding: 8px 12px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+
+    outline: none;
+}
+
+
+/* EFEK INPUT */
+
+.form-group input:focus {
+    border-color: #555;
+    background-color: white;
+}
+
+
+/* =========================
+   KETERANGAN
+========================= */
+
+.register-info {
+    font-size: 30px;
+    font-weight: 400;
+
+    text-align: center;
+
+    line-height: 1.3;
+
+    color: black;
+
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.register-button {
+    display: block;
+
+    width: 248px;
+    max-width: 100%;
+
+    height: 50px;
+
+    margin: 0 auto;
+
+    background-color: #d9d9d9;
+
+    border: 1.5px solid #222;
+    border-radius: 7px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    color: black;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER BUTTON */
+
+.register-button:hover {
+    background-color: #bfbfbf;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    min-height: 35px;
+
+    background-color: white;
+
+    border: 1.5px solid black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 55px;
+}
+
+
+/* FOOTER KIRI */
+
+.footer-left {
+    font-size: 15px;
+    color: black;
+}
+
+
+/* FOOTER KANAN */
+
+.footer-right {
+    display: flex;
+    gap: 200px;
+}
+
+.footer-right a {
+    text-decoration: none;
+
+    font-size: 14px;
+    color: #555;
+
+    transition: 0.3s;
+}
+
+.footer-right a:hover {
+    color: black;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .header h1 {
+        letter-spacing: 3px;
+    }
+
+    .register-container {
+        max-width: 600px;
+        padding: 20px 35px 40px;
+    }
+
+    .register-title {
+        font-size: 38px;
+    }
+
+    .form-group label {
+        font-size: 27px;
+    }
+
+    .register-info {
+        font-size: 23px;
+    }
+
+    .footer {
+        padding: 8px 20px;
+    }
+
+    .footer-right {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        min-height: 55px;
+    }
+
+    .header h1 {
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .main {
+        padding: 20px 12px;
+    }
+
+    .register-container {
+        padding: 18px 20px 35px;
+        border-radius: 15px;
+    }
+
+    .register-title {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .form-group input {
+        height: 43px;
+        font-size: 16px;
+    }
+
+    .register-info {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+
+    .register-button {
+        width: 200px;
+        height: 43px;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .footer-left {
+        font-size: 11px;
+    }
+
+    .footer-right {
+        gap: 15px;
+    }
+
+    .footer-right a {
+        font-size: 11px;
+    }
+
+}

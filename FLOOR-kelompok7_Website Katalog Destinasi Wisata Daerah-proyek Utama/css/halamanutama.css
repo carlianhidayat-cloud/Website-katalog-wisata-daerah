@@ -1,0 +1,705 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d9ddd9;
+
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    min-height: 62px;
+
+    padding: 8px 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    background-color: #ffffff;
+    border-bottom: 1px solid #999999;
+
+}
+
+/* Logo dan nama pengguna */
+.navbar-user {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 46px;
+    height: 46px;
+
+    background: url(/assets/icons/LOGO.jpg);
+    background-size: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid;
+}
+
+.navbar-user p,
+.isometra-regular {
+
+    font-size: 20px;
+
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Judul navbar */
+
+.navbar-title {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Menu navigasi */
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.navbar-menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    white-space: nowrap;
+
+}
+
+.navbar-menu a:hover {
+    color: #999999;
+}
+
+/* BANNER UTAMA */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 315px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    border-bottom: 3px solid #000000;
+}
+
+/* Area foto banner */
+
+.banner-content {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-image: 100% 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    background: url(/assets/images/TUGU.png);
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* KONTEN UTAMA */
+
+.main-contect {
+    padding: 0 36px 36px;
+}
+
+/* judul setiap span */
+
+.section-title {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0px 0px 12px 20px;
+}
+
+/* Menu kategori */
+
+.category-container {
+    width: 100%;
+    padding: 32px 30px;
+
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    border: 2px solid black;
+    border-radius: 10px;
+    gap: 48px;
+}
+
+/* Kartu kategori */
+.category-card {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+
+    display: flex;
+    align-items: center;
+}
+
+/* kotak gambar kategori */
+.category-image {
+    width: 100%;
+    height: 112px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f7f1f1;
+    border: 1.5px solid #222222;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+/* Gambar kategori */
+.category-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Nama Kategori */
+
+.category-card h3 {
+    margin-top: 12px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Penjelasan dan event */
+
+.information-container {
+    margin-top: 34px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 45px;
+}
+
+/* bagian penjelasan */
+
+.explanation {
+    min-width: 0;
+}
+
+.explanation-lines {
+    margin: 0 0 0 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.explanation-lines p {
+    line-height: 1.5;
+    text-align: left;
+    font-size: 15px;
+}
+
+.explanation-lines span {
+    font-weight: 700;
+
+}
+
+/* bagian event dan informasi */
+
+.event {
+    min-width: 0;
+    padding-top: 12px;
+}
+
+.event h2 {
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.event-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 40px;
+
+}
+
+
+/* Kotak foto event */
+
+.event-image {
+    position: relative;
+
+    width: 100%;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url();
+    border: 1.5px solid #999999;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* Gambar event */
+
+.event-image img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* Garis informasi event */
+
+.event-lines {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.event-lines span {
+    font-weight: 700;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    min-height: 39px;
+
+    padding: 8px 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #ffffff;
+    border: 1px solid #999999;
+}
+
+
+/* Copyright */
+
+.copyright {
+    font-size: 16px;
+}
+
+
+/* Menu footer */
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
+.footer-menu a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu a:hover {
+    color: #000000;
+}
+
+@media screen and (max-width: 990px) {
+
+    /* NAVBAR */
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 20px;
+    }
+
+    .navbar-user {
+        align-self: flex-start;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .navbar-user p {
+        font-size: 20px;
+    }
+
+    .navbar-title {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .navbar-menu a {
+        font-size: 8px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 270px;
+    }
+
+    /* KONTEN */
+    .main-contect,
+    .main-content {
+        padding: 0 20px 28px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin: 20px 0 14px 8px;
+    }
+
+    /* KATEGORI */
+    .category-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 22px;
+        gap: 24px 20px;
+    }
+
+    .category-image {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .category-card h3 {
+        font-size: 17px;
+    }
+
+    /* PENJELASAN DAN EVENT */
+    .information-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+        margin-top: 28px;
+    }
+
+    .explanation-lines {
+        margin-left: 8px;
+    }
+
+    .explanation-lines p,
+    .event-lines p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    /* EVENT */
+    .event {
+        padding-top: 0;
+    }
+
+    .event h2 {
+        font-size: 22px;
+        margin-bottom: 14px;
+    }
+
+    .event-content {
+        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.5fr);
+        gap: 20px;
+    }
+
+    .event-image {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    .footer-menu {
+        justify-content: center;
+        gap: 24px;
+    }
+}
+
+/* ========================================== HP Maksimal 480px ========================================== */
+@media screen and (max-width: 480px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 12px 14px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 38px;
+        height: 38px;
+    }
+
+    .navbar-title {
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    .navbar-menu {
+        gap: 8px;
+    }
+
+    .navbar-menu a {
+        font-size: clamp(10px, 2.8vw, 13px);
+    }
+
+    /* BANNER */
+    .banner {
+        height: clamp(160px, 45vw, 220px);
+    }
+
+    /* KONTEN */
+    .main-contect,
+    .main-content {
+        padding: 0 12px 22px;
+    }
+
+    .section-title {
+        font-size: 27px;
+        margin: 18px 0 12px 4px;
+    }
+
+    /* KATEGORI */
+    .category-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 14px;
+        gap: 20px 12px;
+        border-radius: 8px;
+    }
+
+    .category-image {
+        aspect-ratio: 1 / 1;
+        border-radius: 8px;
+    }
+
+    .category-card h3 {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    /* PENJELASAN */
+    .information-container {
+        margin-top: 24px;
+        margin-bottom: 18px;
+        gap: 24px;
+    }
+
+    .explanation-lines {
+        margin-left: 4px;
+    }
+
+    .explanation-lines p,
+    .event-lines p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    /* EVENT */
+    .event h2 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .event-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .event-image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .event-lines {
+        gap: 12px;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 14px 12px;
+        gap: 10px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .footer-menu {
+        width: 100%;
+        justify-content: center;
+        gap: 12px 24px;
+    }
+
+    .footer-menu a {
+        font-size: 13px;
+    }
+}
+
+/* ========================================== 11. HP KECIL Maksimal 360px ========================================== */
+@media screen and (max-width: 360px) {
+
+    /* NAVBAR */
+    .navbar {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 34px;
+        height: 34px;
+    }
+
+    .navbar-user {
+        gap: 8px;
+    }
+
+    .navbar-user p {
+        font-size: 16px;
+    }
+
+    .navbar-title {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .navbar-menu {
+        gap: 5px;
+    }
+
+    .navbar-menu a {
+        font-size: 10px;
+    }
+
+    /* BANNER */
+    .banner {
+        height: 155px;
+    }
+
+    /* KONTEN */
+    .main-contect,
+    .main-content {
+        padding: 0 8px 18px;
+    }
+
+    .section-title {
+        font-size: 23px;
+        margin: 16px 0 10px 3px;
+    }
+
+    /* KATEGORI */
+    .category-container {
+        padding: 10px;
+        gap: 16px 8px;
+    }
+
+    .category-image {
+        aspect-ratio: 1 / 1;
+    }
+
+    .category-card h3 {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* PENJELASAN */
+    .information-container {
+        margin-top: 20px;
+        gap: 22px;
+    }
+
+    .explanation-lines {
+        margin-left: 2px;
+    }
+
+    .explanation-lines p,
+    .event-lines p {
+        font-size: 12px;
+        line-height: 1.65;
+    }
+
+    /* EVENT */
+    .event h2 {
+        font-size: 18px;
+    }
+
+    .event-content {
+        gap: 10px;
+    }
+
+    .event-image {
+        aspect-ratio: 16 / 9;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 12px 8px;
+    }
+
+    .footer-menu {
+        gap: 12px 18px;
+    }
+
+    .footer-menu a {
+        font-size: 12px;
+    }
+}

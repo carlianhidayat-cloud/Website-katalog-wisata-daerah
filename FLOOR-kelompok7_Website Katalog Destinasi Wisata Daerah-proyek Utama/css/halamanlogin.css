@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PENGATURAN GLOBAL */
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(252, 250, 250);
+}
+
+/* SANDI */
+.window {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    background-color: #b8b8b8;
+
+    width: 250px;
+    min-height: 90px;
+
+    border: 1px solid #333;
+    border-radius: 5px;
+
+    z-index: 999;
+}
+
+/* TEKS SANDI */
+.teks {
+    padding: 12px;
+    padding-top: 20px;
+}
+
+/* JUDUL SANDI */
+.title {
+    margin-bottom: 5px;
+}
+
+/* TOMBOL TUTUP */
+.tutup-window {
+    position: absolute;
+
+    top: 3px;
+    right: 7px;
+
+    background: transparent;
+    border: none;
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* EFEK KETIKA KURSOR DIARAHKAN */
+.tutup-window:hover {
+    color: red;
+}
+
+/* HEADER WEBSITE */
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px 10px;
+
+    text-align: center;
+    box-shadow: 0 3px 5px rgb(0, 0, 0);
+}
+
+.header h1 {
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SAMBUTAN LOGIN */
+
+.container {
+    width: 100%;
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 20px 30px;
+
+}
+
+/* JUDUL SELAMAT DATANG */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.welcome-text {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 6;
+}
+
+.welcome h2 {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* KOTAK LOGIN */
+
+.login-card {
+    width: 100%;
+    max-width: 775px;
+    margin: 0 auto;
+    padding: 12px 45px 25px;
+    background-color: #ffffff;
+    border: 1.5px solid #222222;
+    border-radius: 22px;
+}
+
+/* JUDUL LOGIN */
+
+.login-title,
+.isometra-regular {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+}
+
+/* INPUT EMAIL */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.from-grouplabel {
+    display: block;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 13px;
+
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 10px 14px;
+    background-color: #b8b8b8;
+    border: 1.5px solid;
+    border-radius: 5px;
+
+    outline: none;
+
+}
+
+/* PASSWORD */
+
+.form-group1 {
+    margin-bottom: 17px;
+}
+
+.password-box {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 48px;
+
+    background-color: #e7efff;
+    border: 1.5px solid;
+    border-radius: 5px;
+
+    padding: 0 8px 0 14px;
+}
+
+.password-box input {
+    flex: 1;
+    min-width: 0;
+
+    height: 100%;
+    padding: 10px 0;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: #000000;
+    font-size: 14px;
+
+}
+
+.password-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Efek */
+
+.form-group input:focus {
+    border-color: #444444;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.08);
+}
+
+/* TOMBOL KONFIRMASI */
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+.btn-login {
+    width: 247px;
+    min-height: 50px;
+    font-size: 28px;
+    color: #000000;
+    background-color: #d9d9d9;
+    border: 1.5px solid #222222;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* TOMBOL KONFIRMASI */
+
+/* Efek mouse ketika ditombol */
+
+.btn-login:hover {
+    background-color: #c5c5c5;
+}
+
+/* LOGIN */
+.login {
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+.or-text {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ikon */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.container-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+/* Wadah ikon */
+.social-icon {
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #222222;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 1000;
+    transition: 0.2s
+}
+
+/* Ikon Google */
+
+.google {
+    color: blue;
+}
+
+.email-icon {
+    color: #ff0000;
+}
+
+.facebook {
+    color: #2f00ff;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* BAGIAN REGISTER */
+
+.register-colom {
+    width: 240px;
+    margin: 8px auto 0;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.register-colom p {
+    margin-bottom: 2px;
+}
+
+
+/* Tombol Register */
+
+.button-register {
+    display: block;
+    width: 207px;
+    margin: 8px auto 0;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+    background-color: #d9d9d9;
+    border: 1.5px solid #000000;
+    border-radius: 6px;
+    transition: 0.2s;
+
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Efek hover Register */
+
+.button-register:hover {
+    background-color: #c5c5c5;
+}
+
+
+/* CTA WEBSITE */
+
+.deskripsi {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deskripsi p {
+    font-size: 40px;
+    line-height: 1.05;
+    font-weight: 400;
+}
+
+
+/* FOOTER WEBSITE */
+
+.footer {
+    width: 100%;
+    min-height: 39px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 55px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Copyright */
+
+.copyright {
+    font-size: 16px;
+}
+
+
+/* Link footer */
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
+.footer-link a {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-link a:hover {
+    color: #000000;
+}
+
+/* =========================================
+   TABLET DAN HP BESAR
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header {
+        padding: 12px 14px;
+    }
+
+    .container {
+        padding: 16px 14px 24px;
+    }
+
+    .login-card {
+        padding: 20px 24px 24px;
+        border-radius: 18px;
+    }
+
+    .deskripsi p {
+        font-size: 35px;
+    }
+
+    .footer {
+        padding: 12px 18px;
+    }
+
+    .footer-link {
+        gap: 16px;
+    }
+}
+
+/* =========================================
+   HP
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* HEADER */
+    .header {
+        padding: 12px 12px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: 1.35;
+    }
+
+    /* KONTEN UTAMA */
+    .container {
+        padding: 16px 12px 24px;
+    }
+
+    /* JUDUL SELAMAT DATANG */
+    .welcome {
+        margin-bottom: 16px;
+    }
+
+    .welcome-text {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: 1.3;
+    }
+
+    .welcome h2 {
+        font-size: 20px;
+        line-height: 1.35;
+    }
+
+    /* KARTU LOGIN */
+    .login-card {
+        width: 100%;
+        padding: 18px 16px 22px;
+        border-radius: 16px;
+    }
+
+    /* JUDUL LOGIN */
+    .login-title,
+    .isometra-regular {
+        font-size: 33px;
+        margin-bottom: 18px;
+    }
+
+    /* LABEL DAN INPUT */
+    .form-group label,
+    .form-group1 label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group1 {
+        margin-bottom: 14px;
+    }
+
+    .form-group input,
+    .password-box {
+        height: 46px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+    }
+
+    .password-box {
+        padding: 0 6px 0 12px;
+    }
+
+    /* LOGIN SOSIAL */
+    .or-text {
+        font-size: 18px;
+    }
+
+    .container-icons {
+        gap: 18px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 27px;
+    }
+
+    /* REGISTER */
+    .register-colom {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .button-register {
+        max-width: 100%;
+        min-height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+
+    /* DESKRIPSI */
+    .deskripsi {
+        margin-top: 22px;
+        padding: 0 4px;
+    }
+
+    .deskripsi p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    /* FOOTER */
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        padding: 14px 12px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+
+    .footer-link {
+        width: 100%;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .footer-link a {
+        font-size: 13px;
+    }
+
+    /* POPUP SANDI */
+    .window {
+        right: 10px;
+        bottom: 10px;
+
+        width: 200px;
+        max-height: 70px;
+
+        border-radius: 8px;
+    }
+
+    .teks {
+        padding: 24px 10px 10px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .teks p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+/* =========================================
+   HP KECIL
+   ========================================= */
+
+@media screen and (max-width: 360px) {
+
+    .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 17px;
+    }
+
+    .container {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .login-card {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .welcome-text {
+        font-size: 21px;
+    }
+
+    .welcome h2 {
+        font-size: 18px;
+    }
+
+    .container-icons {
+        gap: 14px;
+    }
+
+    .social-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 25px;
+    }
+
+    .footer-link {
+        gap: 16px;
+    }
+
+}

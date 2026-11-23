@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Katalog Destinasi Wisata Daerah</title>
+    <link rel="stylesheet" href="/css/halamanlogin.css">
+    <!-- /*ini cuma buat teks bukan flexbox kayak tailwind*/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Isometra&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER WEBSITE -->
+    <header class="header">
+        <h1>Website Katalog Destinasi Wisata Daerah</h1>
+    </header>
+    <br>
+
+    <!-- WINDOW POPUP -->
+<div class="window" id="windowSandi">
+
+    <!-- TOMBOL TUTUP -->
+    <button class="tutup-window" onclick="tutupWindow()">
+        &times;
+    </button>
+
+    <div class="teks">
+        <h3 class="title">SANDI</h3>
+
+        <p>EMAIL : Coding123@gmail.com</p>
+        <p>PASSWORD : Coding123</p>
+    </div>
+
+</div>
+
+    <!-- KONTEN UTAMA -->
+    <div class="container">
+        <section class="welcome">
+            <p class="welcome-text">Selamat Datang</p>
+            <h2>Login Untuk Masuk</h2>
+
+        </section>
+
+        <!-- FORM LOGIN -->
+        <section class="login-card">
+            <h3 class="login-title">LOGIN</h3>
+
+            <from action="#" method="post">
+
+                <!-- INPUT EMAIL -->
+                <div class="form-group">
+                    <label>EMAIL</label>
+                    <input type="text" id="email" placeholder="Masukan email">
+                </div>
+
+                <!-- INPUT EMAIL -->
+                <div class="form-group1">
+                    <label>PASSWORD</label>
+
+                    <div class="password-box">
+                        <input type="password" id="password" placeholder="Masukan password">
+
+                        <button type="button" id="togglePassword" aria-label="Tampilkan password">
+                            👁
+                        </button>
+                    </div>
+
+                </div>
+
+                <br>
+
+                <!-- TOMBOL KONFIRMASI -->
+                <div class="button">
+                    <button onclick="onLogin()" type="submit" id="login" class="btn-login">
+                        KONFIRMASI
+                    </button>
+                </div>
+
+            </from>
+
+            <!-- PILIHAN LOGIN LAIN -->
+            <div class="login">
+                <p class="or-text">ATAU</p>
+
+                <div class="social-icons">
+                    <div class="container-icons">
+                        <!-- Google -->
+                        <a href="#" class="social-icon google" aria-label="Login dengan Google">
+                            G
+                        </a>
+
+                        <!-- Email -->
+                        <a href="#" class="social-icon email-icon" aria-label="Login dengan Email">
+                            ✉
+                        </a>
+
+                        <!-- Facebook -->
+                        <a href="#" class="social-icon facebook" aria-label="Login dengan Facebook">
+                            f
+                        </a>
+                    </div>
+
+                    <!-- BAGIAN REGISTER -->
+                    <div class="register-colom">
+
+                        <p>Belum punya akun</p>
+                        <p>Silahkan klik di sini</p>
+
+                        <a onclick="onRegister()" id="register" class="button-register">
+                            REGISTER
+                        </a>
+                    </div>
+                </div>
+
+        </section>
+        <!-- DESKRIPSI WEBSITE -->
+        <section class="deskripsi">
+            <p>
+                Berbagai tempat Wisata Daerah
+                <br>
+                rekomendasi dan Populer ada Di sini
+            </p>
+        </section>
+
+    </div>
+
+    <!-- FOOTER WEBSITE -->
+    <footer class="footer">
+
+        <p class="copyright">
+            @Wifeframe_kel7
+        </p>
+
+        <nav class="footer-link">
+            <a href="/pages/halamanindex.html">About me</a>
+            <a href="/pages/Contact.html">Contact us</a>
+        </nav>
+
+    </footer>
+    <script src="halamanlogin.js"></script>
+
+</body>
+
+</html>

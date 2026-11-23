@@ -1,0 +1,498 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(254, 250, 250);
+    color: black;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* HEADER WEBSITE */
+
+.header {
+    width: 100%;
+    padding: 8px 15px;
+    background-color: white;
+    text-align: center;
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.header h1 {
+    font-size: 44px;
+
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+
+/* KONTEN UTAMA */
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    padding: 10px 10px 30px;
+    flex: 1;
+}
+
+
+/* JUDUL SELAMAT DATANG */
+
+.welcome {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.welcome p {
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 6px;
+}
+
+.welcome h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+
+/* KOTAK KELOMPOK */
+
+.group-card {
+    width: 100%;
+    max-width: 775px;
+    min-height: 617px;
+
+    margin: 0 auto;
+
+    padding: 16px 55px 30px;
+    background-color: #fffafa;
+    border: 1.5px solid #222222;
+    border-radius: 22px;
+}
+
+
+/* Judul Kelompok */
+
+.group-card h3,
+.isometra-regular {
+    text-align: center;
+
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 62px;
+
+    font-family: "Isometra", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* DAFTAR ANGGOTA */
+
+.members h4 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.members p {
+    font-size: 36px;
+    font-weight: 400;
+
+    margin-bottom: 14px;
+    border-bottom: 2px solid black;
+}
+
+
+/* TOMBOL MASUK LOGIN */
+
+.tutorial {
+    text-align: center;
+    margin-top: 78px;
+}
+
+.tutorial p {
+    font-size: 23px;
+    line-height: 1.3;
+}
+
+
+/* Tombol Masuk */
+
+.btn-masuk {
+    width: 239px;
+    margin: 14px auto 0;
+    padding: 10px 90px;
+    background-color: #d9d9d9;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    transition: 0.2s;
+}
+
+
+/* Efek ketika mouse diarahkan ke tombol */
+
+.btn-masuk:hover {
+    background-color: #c4c4c4;
+    transform: translateY(-2px);
+}
+
+
+/* DESKRIPSI WEBSITE */
+
+.deskripsi {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.deskripsi p {
+    font-size: 36px;
+    line-height: 1.05;
+}
+
+
+/* FOOTER WEBSITE */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    min-height: 39px;
+    padding: 8px 55px;
+
+    background-color: white;
+    border: 1px solid #222222;
+
+    gap: 20px;
+}
+
+
+/* Copyright */
+
+.copyright {
+    font-size: 16px;
+}
+
+
+/* Menu Footer */
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
+.footer-menu a {
+    font-size: 14px;
+    color: #555555;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 990px) {
+
+    /* HEADER */
+    .header {
+        padding: 12px 15px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    /* KONTEN UTAMA */
+    .container {
+        padding: 15px 20px 25px;
+    }
+
+    /* JUDUL SELAMAT DATANG */
+    .welcome {
+        margin-bottom: 20px;
+    }
+
+    .welcome p {
+        font-size: 38px;
+        letter-spacing: 3px;
+    }
+
+    .welcome h2 {
+        font-size: 40px;
+    }
+
+    /* KOTAK KELOMPOK */
+    .group-card {
+        max-width: 900px;
+        min-height: 900px;
+        padding: 25px 35px 30px;
+        border-radius: 18px;
+    }
+
+    /* JUDUL KELOMPOK */
+    .group-card h3,
+    .isometra-regular {
+        font-size: 38px;
+        margin-bottom: 70px;
+    }
+
+    /* DAFTAR ANGGOTA */
+    .members h4 {
+        font-size: 40px;
+        margin-bottom: 45px;
+    }
+
+    .members p {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    /* TOMBOL MASUK */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial p {
+        font-size: 35px;
+    }
+
+    .btn-masuk {
+        margin-top: 40px;
+        width: 270px;
+        font-size: 30px;
+    }
+
+    /* DESKRIPSI */
+    .deskripsi {
+        margin-top: 25px;
+    }
+
+    .deskripsi p {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 12px 25px;
+    }
+
+    .footer-menu {
+        gap: 45px;
+    }
+}
+
+/* ========================================= RESPONSIVE HP Ukuran layar maksimal 480px ========================================= */
+@media screen and (max-width: 580px) {
+
+    /* HEADER */
+    .header {
+        padding: 12px 15px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+        letter-spacing: 3px;
+    }
+
+    /* KONTEN UTAMA */
+    .container {
+        padding: 15px 20px 25px;
+    }
+
+    /* JUDUL SELAMAT DATANG */
+    .welcome {
+        margin-bottom: 20px;
+    }
+
+    .welcome p {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .welcome h2 {
+        font-size: 35px;
+    }
+
+    /* KOTAK KELOMPOK */
+    .group-card {
+        max-width: 900px;
+        min-height: 900px;
+        padding: 25px 35px 30px;
+        border-radius: 18px;
+    }
+
+    /* JUDUL KELOMPOK */
+    .group-card h3,
+    .isometra-regular {
+        font-size: 35px;
+        margin-bottom: 50px;
+    }
+
+    /* DAFTAR ANGGOTA */
+    .members h4 {
+        font-size: 34px;
+        margin-bottom: 40px;
+    }
+
+    .members p {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    /* TOMBOL MASUK */
+    .tutorial{
+        margin-top: 80px;
+    }
+
+    .tutorial p {
+        font-size: 35px;
+    }
+
+    .btn-masuk {
+        margin-top: 40px;
+        width: 270px;
+        font-size: 30px;
+    }
+
+    /* DESKRIPSI */
+    .deskripsi {
+        margin-top: 25px;
+    }
+
+    .deskripsi p {
+        font-size: 25px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 12px 25px;
+    }
+
+    .footer-menu {
+        gap: 45px;
+    }
+}
+
+/* ========================================= RESPONSIVE HP KECIL Ukuran layar maksimal 360px ========================================= */
+@media screen and (max-width: 380px) {
+
+    /* HEADER */
+    .header {
+        padding: 12px 15px;
+    }
+
+    .header h1 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    /* KONTEN UTAMA */
+    .container {
+        padding: 15px 20px 25px;
+    }
+
+    /* JUDUL SELAMAT DATANG */
+    .welcome {
+        margin-bottom: 20px;
+    }
+
+    .welcome p {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .welcome h2 {
+        font-size: 31px;
+    }
+
+    /* KOTAK KELOMPOK */
+    .group-card {
+        max-width: 900px;
+        min-height: 900px;
+        padding: 25px 35px 30px;
+        border-radius: 18px;
+    }
+
+    /* JUDUL KELOMPOK */
+    .group-card h3,
+    .isometra-regular {
+        font-size: 28px;
+        margin-bottom: 70px;
+    }
+
+    /* DAFTAR ANGGOTA */
+    .members h4 {
+        font-size: 37px;
+        margin-bottom: 45px;
+    }
+
+    .members p {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    /* TOMBOL MASUK */
+    .tutorial {
+        margin-top: 80px;
+    }
+
+    .tutorial p {
+        font-size: 30px;
+    }
+
+    .btn-masuk {
+        margin-top: 40px;
+        width: 200px;
+        height: auto;
+        font-size: 20px;
+        padding: 10px 60px;
+    }
+
+    /* DESKRIPSI */
+    .deskripsi {
+        margin-top: 25px;
+    }
+
+    .deskripsi p {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    /* FOOTER */
+    .footer {
+        padding: 12px 25px;
+    }
+
+    .footer-menu {
+        gap: 45px;
+    }
+}
